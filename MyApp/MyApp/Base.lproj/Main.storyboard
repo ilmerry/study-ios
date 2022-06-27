@@ -16,33 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNE-97-WQz">
-                                <rect key="frame" x="146.5" y="430" width="121" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="BTC 60.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHA-Sq-Fpb">
+                                <rect key="frame" x="144.5" y="93" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvi-Gr-HUL">
-                                <rect key="frame" x="173.5" y="486" width="67" height="31"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exchange Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trK-gs-hRi">
+                                <rect key="frame" x="25" y="152" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account to be exchanged" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpy-aB-CFr">
+                                <rect key="frame" x="25" y="208" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am9-MK-JoZ">
+                                <rect key="frame" x="164" y="335" width="87" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XvB-iv-YAy"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="plain" title="Exchange"/>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1s-qr-zqz">
+                                <rect key="frame" x="163" y="283" width="89" height="32"/>
+                                <segments>
+                                    <segment title="BTC"/>
+                                    <segment title="ETH"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Vvi-Gr-HUL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="059-3D-P81"/>
-                            <constraint firstItem="XNE-97-WQz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EOw-df-mdL"/>
-                            <constraint firstItem="XNE-97-WQz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UIf-uh-OIG"/>
-                            <constraint firstItem="Vvi-Gr-HUL" firstAttribute="top" secondItem="XNE-97-WQz" secondAttribute="bottom" constant="20" id="iuz-Wi-WKK"/>
+                            <constraint firstItem="AHA-Sq-Fpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cvy-E1-HJD"/>
+                            <constraint firstItem="fpy-aB-CFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="FeH-Hs-hew"/>
+                            <constraint firstItem="fpy-aB-CFr" firstAttribute="top" secondItem="trK-gs-hRi" secondAttribute="bottom" constant="29" id="K8v-cJ-2nW"/>
+                            <constraint firstItem="trK-gs-hRi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="TR9-nE-Mfr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="trK-gs-hRi" secondAttribute="trailing" constant="25" id="XzD-Jo-yY9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fpy-aB-CFr" secondAttribute="trailing" constant="25" id="ZCf-uG-VYE"/>
+                            <constraint firstItem="B1s-qr-zqz" firstAttribute="top" secondItem="fpy-aB-CFr" secondAttribute="bottom" constant="45" id="cXs-g5-Lmb"/>
+                            <constraint firstItem="am9-MK-JoZ" firstAttribute="top" secondItem="B1s-qr-zqz" secondAttribute="bottom" constant="34" id="hTl-lX-lry"/>
+                            <constraint firstItem="trK-gs-hRi" firstAttribute="top" secondItem="AHA-Sq-Fpb" secondAttribute="bottom" constant="34" id="pE5-rs-xgK"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="myLabel" destination="XNE-97-WQz" id="eKI-qJ-8wj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
