@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,10 +31,51 @@
                             <outlet property="delegate" destination="HjJ-M7-jDq" id="Vmf-Bm-uyc"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="axa-QI-cfK" kind="show" identifier="DefinitionSegue" id="fcV-ec-e6E"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QlC-6t-Icx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="61" y="751"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hr5-xp-h19">
+            <objects>
+                <viewController id="axa-QI-cfK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gub-Vx-v9R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lam-EF-1Gd">
+                                <rect key="frame" x="186" y="332" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfadsfadsfasdfadsfadsfasdfadsfadsfadsfadfadsfadsfasdfadsfadsfadf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXQ-Bm-toT">
+                                <rect key="frame" x="20" y="373" width="374" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0uL-w0-BdL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0uL-w0-BdL" firstAttribute="trailing" secondItem="TXQ-Bm-toT" secondAttribute="trailing" constant="20" id="6qx-0G-U68"/>
+                            <constraint firstItem="TXQ-Bm-toT" firstAttribute="centerX" secondItem="gub-Vx-v9R" secondAttribute="centerX" id="K9m-hP-D3H"/>
+                            <constraint firstItem="TXQ-Bm-toT" firstAttribute="top" secondItem="lam-EF-1Gd" secondAttribute="bottom" constant="20" id="epH-FM-3z8"/>
+                            <constraint firstItem="TXQ-Bm-toT" firstAttribute="centerX" secondItem="gub-Vx-v9R" secondAttribute="centerX" id="j5p-S3-Tkh"/>
+                            <constraint firstItem="TXQ-Bm-toT" firstAttribute="centerY" secondItem="gub-Vx-v9R" secondAttribute="centerY" id="oPR-fd-w9Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zri-mR-X7a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8C-tr-jN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="751"/>
         </scene>
     </scenes>
     <resources>
