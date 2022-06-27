@@ -3,7 +3,7 @@ import UIKit
 
 class CountryTableViewController: UITableViewController {
 
-    let flags = ["🇳🇴", "🇳🇿", "🇰🇷", "🇧🇷"];
+    let flags = getCountries();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class CountryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
 
         // 셀에 무엇을 보여줄지 지정하는 함수
-        cell.textLabel?.text = flags[indexPath.row];
+        cell.textLabel?.text = flags[indexPath.row].flag + "-" + String(flags[indexPath.row].name);
 
         return cell
     }
@@ -39,9 +39,11 @@ class CountryTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let defOfViewController = segue.destination as! CountryDefinitionViewController;
-        let selectedCountry = sender as! String;
-        
-        defOfViewController.country = selectedCountry;
+        if let defOfViewController = segue.destination as? CountryDefinitionViewController {
+            if let selectedCountry = sender as? Country {
+                // 만약 segue.destination의 타입이 CountryDefinitionViewController이고, sender의 타입이 String임이 확실하다면 각각을 defOf~와 selectedCountry에 할당하고 아래를 실행하라
+                defOfViewController.country = selectedCountry;
+            }
+        }
     }
 }
