@@ -3,7 +3,7 @@ import UIKit
 
 class CountryTableViewController: UITableViewController {
 
-    let flags = ["🇰🇷", "🇳🇿", "🇺🇦", "🇳🇴"];
+    let flags = ["🇳🇴", "🇳🇿", "🇰🇷", "🇧🇷"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,15 @@ class CountryTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "DefinitionSegue", sender: nil)
+        let selectedCountry = flags[indexPath.row];
+        // 보내는 이를 현재 셀로 지정하고 segue way 수행
+        performSegue(withIdentifier: "DefinitionSegue", sender: selectedCountry)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let defOfViewController = segue.destination as! CountryDefinitionViewController;
+        let selectedCountry = sender as! String;
+        
+        defOfViewController.country = selectedCountry;
     }
 }
