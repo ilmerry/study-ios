@@ -15,7 +15,7 @@ protocol SampleProtocol
 class DelegateViewController: UIViewController {
     @IBOutlet weak var dataTextField: UITextField!
     
-    var delegate : SampleProtocol?
+    // var delegate : SampleProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,8 @@ class DelegateViewController: UIViewController {
     
     @IBAction func dataSendButtonClicked(_ sender: Any) {
         if let text = dataTextField.text {
-            delegate?.dataSend(data: text)
+            // sample이라는 신호에 textfield의 text를 담아 보내겠다
+            NotificationCenter.default.post(name: NSNotification.Name("sample"), object: text)
         }
         
         self.navigationController?.popViewController(animated: true)

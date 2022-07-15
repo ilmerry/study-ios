@@ -24,20 +24,20 @@ class MainViewController: UIViewController, SampleProtocol {
     @IBAction func nextButtonClicked(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "DelegateViewController") as? DelegateViewController else {return}
         
+        // sample이라는 신호를 받을 옵저버를 이 VC에 달아줌
+        NotificationCenter.default.addObserver(self, selector: #selector(dataReceived), name: NSNotification.Name("sample"), object: nil)
+        
         // 대리자 선언
-        nextVC.delegate = self
+        //nextVC.delegate = self
         
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func dataReceived(notification: NSNotification) {
+        if let text = notification.object as? String {
+            // object가 무슨 형인지 모르기 때문에 String으로 다운 캐스팅해서 가져옴
+            dataLabel.text = text
+        }
     }
-    */
 
 }
