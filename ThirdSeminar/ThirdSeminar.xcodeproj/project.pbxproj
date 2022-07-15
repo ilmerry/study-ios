@@ -15,6 +15,7 @@
 		F472F0872880750600D342FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F472F0852880750600D342FF /* LaunchScreen.storyboard */; };
 		F472F08F288075FE00D342FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472F08E288075FE00D342FF /* MainViewController.swift */; };
 		F472F0912880760800D342FF /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472F0902880760800D342FF /* DelegateViewController.swift */; };
+		F4AB01402880E2F1006BB2B6 /* TextFieldDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB013F2880E2F1006BB2B6 /* TextFieldDelegateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F472F0882880750600D342FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F472F08E288075FE00D342FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F472F0902880760800D342FF /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		F4AB013F2880E2F1006BB2B6 /* TextFieldDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				F472F0882880750600D342FF /* Info.plist */,
 				F472F08E288075FE00D342FF /* MainViewController.swift */,
 				F472F0902880760800D342FF /* DelegateViewController.swift */,
+				F4AB013F2880E2F1006BB2B6 /* TextFieldDelegateViewController.swift */,
 			);
 			path = ThirdSeminar;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				F472F0912880760800D342FF /* DelegateViewController.swift in Sources */,
 				F472F07F2880750400D342FF /* ViewController.swift in Sources */,
 				F472F07B2880750400D342FF /* AppDelegate.swift in Sources */,
+				F4AB01402880E2F1006BB2B6 /* TextFieldDelegateViewController.swift in Sources */,
 				F472F07D2880750400D342FF /* SceneDelegate.swift in Sources */,
 				F472F08F288075FE00D342FF /* MainViewController.swift in Sources */,
 			);
