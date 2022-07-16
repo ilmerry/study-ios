@@ -15,6 +15,12 @@
 		F472F0872880750600D342FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F472F0852880750600D342FF /* LaunchScreen.storyboard */; };
 		F472F08F288075FE00D342FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472F08E288075FE00D342FF /* MainViewController.swift */; };
 		F472F0912880760800D342FF /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472F0902880760800D342FF /* DelegateViewController.swift */; };
+		F499572B288270BF001001EE /* SoptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499572A288270BF001001EE /* SoptTableViewCell.swift */; };
+		F499572F28827859001001EE /* SoptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499572E28827859001001EE /* SoptViewController.swift */; };
+		F4995731288279FF001001EE /* ServiceListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4995730288279FF001001EE /* ServiceListDataModel.swift */; };
+		F49957332882817A001001EE /* soptAppIcon1 in Resources */ = {isa = PBXBuildFile; fileRef = F49957322882817A001001EE /* soptAppIcon1 */; };
+		F4995735288281B1001001EE /* soptAppIcon2 in Resources */ = {isa = PBXBuildFile; fileRef = F4995734288281B1001001EE /* soptAppIcon2 */; };
+		F4995737288281DC001001EE /* soptAppIcon3 in Resources */ = {isa = PBXBuildFile; fileRef = F4995736288281DC001001EE /* soptAppIcon3 */; };
 		F4AB01402880E2F1006BB2B6 /* TextFieldDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB013F2880E2F1006BB2B6 /* TextFieldDelegateViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		F472F0882880750600D342FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F472F08E288075FE00D342FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F472F0902880760800D342FF /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		F499572A288270BF001001EE /* SoptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoptTableViewCell.swift; sourceTree = "<group>"; };
+		F499572E28827859001001EE /* SoptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoptViewController.swift; sourceTree = "<group>"; };
+		F4995730288279FF001001EE /* ServiceListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListDataModel.swift; sourceTree = "<group>"; };
+		F49957322882817A001001EE /* soptAppIcon1 */ = {isa = PBXFileReference; lastKnownFileType = file; name = soptAppIcon1; path = ../../../../../../../var/folders/jb/57zj62h14s7b97tbznwlk9qm0000gn/T/TemporaryItems/NSIRD_screencaptureui_j72q0K/soptAppIcon1; sourceTree = "<group>"; };
+		F4995734288281B1001001EE /* soptAppIcon2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = soptAppIcon2; path = ../../../../../../../var/folders/jb/57zj62h14s7b97tbznwlk9qm0000gn/T/TemporaryItems/NSIRD_screencaptureui_cKSPDv/soptAppIcon2; sourceTree = "<group>"; };
+		F4995736288281DC001001EE /* soptAppIcon3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = soptAppIcon3; path = ../../../../../../../var/folders/jb/57zj62h14s7b97tbznwlk9qm0000gn/T/TemporaryItems/NSIRD_screencaptureui_EJjgbz/soptAppIcon3; sourceTree = "<group>"; };
 		F4AB013F2880E2F1006BB2B6 /* TextFieldDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,11 +79,17 @@
 				F472F07E2880750400D342FF /* ViewController.swift */,
 				F472F0802880750400D342FF /* Main.storyboard */,
 				F472F0832880750600D342FF /* Assets.xcassets */,
+				F49957322882817A001001EE /* soptAppIcon1 */,
+				F4995734288281B1001001EE /* soptAppIcon2 */,
+				F4995736288281DC001001EE /* soptAppIcon3 */,
 				F472F0852880750600D342FF /* LaunchScreen.storyboard */,
 				F472F0882880750600D342FF /* Info.plist */,
 				F472F08E288075FE00D342FF /* MainViewController.swift */,
 				F472F0902880760800D342FF /* DelegateViewController.swift */,
 				F4AB013F2880E2F1006BB2B6 /* TextFieldDelegateViewController.swift */,
+				F499572A288270BF001001EE /* SoptTableViewCell.swift */,
+				F499572E28827859001001EE /* SoptViewController.swift */,
+				F4995730288279FF001001EE /* ServiceListDataModel.swift */,
 			);
 			path = ThirdSeminar;
 			sourceTree = "<group>";
@@ -134,7 +152,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4995737288281DC001001EE /* soptAppIcon3 in Resources */,
+				F4995735288281B1001001EE /* soptAppIcon2 in Resources */,
 				F472F0872880750600D342FF /* LaunchScreen.storyboard in Resources */,
+				F49957332882817A001001EE /* soptAppIcon1 in Resources */,
 				F472F0842880750600D342FF /* Assets.xcassets in Resources */,
 				F472F0822880750400D342FF /* Main.storyboard in Resources */,
 			);
@@ -147,12 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F499572F28827859001001EE /* SoptViewController.swift in Sources */,
 				F472F0912880760800D342FF /* DelegateViewController.swift in Sources */,
 				F472F07F2880750400D342FF /* ViewController.swift in Sources */,
 				F472F07B2880750400D342FF /* AppDelegate.swift in Sources */,
 				F4AB01402880E2F1006BB2B6 /* TextFieldDelegateViewController.swift in Sources */,
 				F472F07D2880750400D342FF /* SceneDelegate.swift in Sources */,
 				F472F08F288075FE00D342FF /* MainViewController.swift in Sources */,
+				F499572B288270BF001001EE /* SoptTableViewCell.swift in Sources */,
+				F4995731288279FF001001EE /* ServiceListDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
