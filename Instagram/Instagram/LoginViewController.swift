@@ -31,5 +31,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func registerButtonDidTap(_ sender: UIButton) {
+        // 1. 스토리보드 생성
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // 2. VC 생성
+        let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterViewController
+        
+        // 3. 화면전환
+//        self.present(registerViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(registerViewController, animated: true)
     }
 }

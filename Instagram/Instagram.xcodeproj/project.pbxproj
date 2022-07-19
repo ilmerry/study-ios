@@ -13,6 +13,7 @@
 		F4F5357C28865FB000CA599C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F5357B28865FB000CA599C /* Assets.xcassets */; };
 		F4F5357F28865FB000CA599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F5357D28865FB000CA599C /* LaunchScreen.storyboard */; };
 		F4F53587288680B000CA599C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F53586288680B000CA599C /* LoginViewController.swift */; };
+		F4F535892886868400CA599C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F535882886868400CA599C /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F4F5357E28865FB000CA599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4F5358028865FB000CA599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F53586288680B000CA599C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F4F535882886868400CA599C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F4F5357D28865FB000CA599C /* LaunchScreen.storyboard */,
 				F4F5358028865FB000CA599C /* Info.plist */,
 				F4F53586288680B000CA599C /* LoginViewController.swift */,
+				F4F535882886868400CA599C /* RegisterViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				F4F53587288680B000CA599C /* LoginViewController.swift in Sources */,
 				F4F5357328865FAF00CA599C /* AppDelegate.swift in Sources */,
 				F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */,
+				F4F535892886868400CA599C /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
