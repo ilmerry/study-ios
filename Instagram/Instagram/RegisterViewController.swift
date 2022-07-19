@@ -47,6 +47,8 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setupTextField()
         setupAttribute()
+        
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
     }
     
     // MARK: - Actions
@@ -73,6 +75,9 @@ class RegisterViewController: UIViewController {
         default:
             fatalError("Missing TextField...")
         }
+    }
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Helpers
