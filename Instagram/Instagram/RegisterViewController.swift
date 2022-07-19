@@ -19,6 +19,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    var textFields: [UITextField] {
+        [emailTextField, nameTextField, nicknameTextField, passwordTextField]
+    }
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +32,28 @@ class RegisterViewController: UIViewController {
     // MARK: - Actions
     @objc
     func textFieldEditingChanged(_ sender: UITextField) {
+        let text = sender.text ?? ""
+            
+        switch sender {
+        case emailTextField:
+            print("email")
+        case nameTextField:
+            print("name")
+        case nicknameTextField:
+            print("nickname")
+        case passwordTextField:
+            print("password")
+        default:
+            fatalError("Missing TextField...")
+        }
     }
     
     // MARK: - Helpers
     private func setupTextField() {
-        emailTextField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
-        nameTextField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
-        nicknameTextField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
-        passwordTextField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
+        textFields.forEach { tf in
+            tf.addTarget(self,
+                         action: #selector(textFieldEditingChanged(_:)),
+                         for: .editingChanged)
+        }
     }
 }
