@@ -9,10 +9,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     var email = String()
     var password = String()
-
+    var userInfo: UserInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +23,30 @@ class LoginViewController: UIViewController {
     }
     @IBAction func emailTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+        // 로그인 버튼 활성화
+        self.loginButton.backgroundColor = text.isValidEmail() ? .facebookColor : .disabledButtonColor
+        
         self.email = text
     }
     
     @IBAction func passwordTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+
+        self.loginButton.backgroundColor = text.count > 2 ? .facebookColor : .disabledButtonColor
+        
         self.password = text
     }
     
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
+        guard let userInfo = self.userInfo else { return }
+        if userInfo.email == self.email
+            && userInfo.password == self.password {
+            // 만약 가입시에 입력한 정보와 로그인tf에 입력한 정보가 같다면
+            // 다음화면으로 이동
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestViewController
+                self.present(vc, animated: true, completion: nil)
+        } else {
+        }
     }
     
     @IBAction func registerButtonDidTap(_ sender: UIButton) {
@@ -42,6 +59,11 @@ class LoginViewController: UIViewController {
         // 3. 화면전환
 //        self.present(registerViewController, animated: true, completion: nil)
         self.navigationController?.pushViewController(registerViewController, animated: true)
+        
+        registerViewController.userInfo = { [weak self] (userInfo) in
+            // 회원가입에서 정보 넘어왔으면 login 버튼 활성화되도록 userInfo에 정보 전달
+            self?.userInfo = userInfo
+        }
     }
     
     private func setupAttribute() {

@@ -9,6 +9,15 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     // MARK: - Properties
+    var email: String = ""
+    var name: String = ""
+    var nickname: String = ""
+    var password: String = ""
+    
+    var userInfo: ((UserInfo) -> Void)?
+
+    
+    // 유효성 검사를 위한 프로퍼티
     var isValidEmail = false{
         didSet { // 프로퍼티 옵저버
             self.validateUserInfo()
@@ -59,23 +68,39 @@ class RegisterViewController: UIViewController {
         switch sender {
         case emailTextField:
             self.isValidEmail = text.isValidEmail()
-            print(isValidEmail)
+            self.email = text
 
         // 두글자 이상이어야 True
         case nameTextField:
             self.isValidName = text.count > 2
+            self.name = text
 
         case nicknameTextField:
             self.isValidNickName = text.count > 2
-
+            self.nickname = text
+            
         case passwordTextField:
             self.isValidPassword = text.isValidPassword()
-            print(isValidPassword)
+            self.password = text
             
         default:
             fatalError("Missing TextField...")
         }
     }
+    
+    @IBAction func registerButtonDidTap(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        
+        let userInfo = UserInfo(
+        email: self.email,
+        name: self.name,
+        nickname: self.nickname,
+        password: self.password)
+
+        //데이터 전달
+        self.userInfo?(userInfo)
+    }
+    
     @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -88,6 +113,7 @@ class RegisterViewController: UIViewController {
                          for: .editingChanged)
         }
     }
+    
     // 사용자가 입력한 회원정보 확인 -> UI 업데이트
     private func validateUserInfo() {
         if isValidEmail
@@ -95,8 +121,10 @@ class RegisterViewController: UIViewController {
             && isValidNickName
             && isValidPassword {
             self.signupButton.backgroundColor = UIColor.facebookColor
+            self.signupButton.isEnabled = true
         } else {
             self.signupButton.backgroundColor = .disabledButtonColor
+            self.signupButton.isEnabled = false
         }
     }
     
