@@ -18,7 +18,6 @@
 		F4F535912886CCC000CA599C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F535902886CCC000CA599C /* UIView+Extension.swift */; };
 		F4F535932886D10800CA599C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F535922886D10800CA599C /* UIViewController+Extension.swift */; };
 		F4F535952886E7E400CA599C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F535942886E7E400CA599C /* UserInfo.swift */; };
-		F4F535972886F09A00CA599C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F535962886F09A00CA599C /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		F4F535902886CCC000CA599C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F4F535922886D10800CA599C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F4F535942886E7E400CA599C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		F4F535962886F09A00CA599C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 				F4F535902886CCC000CA599C /* UIView+Extension.swift */,
 				F4F535922886D10800CA599C /* UIViewController+Extension.swift */,
 				F4F535942886E7E400CA599C /* UserInfo.swift */,
-				F4F535962886F09A00CA599C /* TestViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -163,7 +160,6 @@
 				F4F535952886E7E400CA599C /* UserInfo.swift in Sources */,
 				F4F535932886D10800CA599C /* UIViewController+Extension.swift in Sources */,
 				F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */,
-				F4F535972886F09A00CA599C /* TestViewController.swift in Sources */,
 				F4F535892886868400CA599C /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

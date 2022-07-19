@@ -43,8 +43,12 @@ class LoginViewController: UIViewController {
             && userInfo.password == self.password {
             // 만약 가입시에 입력한 정보와 로그인tf에 입력한 정보가 같다면
             // 다음화면으로 이동
-            let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestViewController
-                self.present(vc, animated: true, completion: nil)
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+            
+            // 넘어가는 방식 fullScreen으로 변경
+            vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true, completion: nil)
         } else {
         }
     }
