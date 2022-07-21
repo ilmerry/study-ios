@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qzw-Wd-YIy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fvi-Yp-vBz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -176,7 +176,7 @@
         <!--Home-->
         <scene sceneID="VhW-BU-qHm">
             <objects>
-                <viewController id="u4M-S6-1Bs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="u4M-S6-1Bs" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bg2-Sx-6YA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,16 +233,27 @@
                                     <constraint firstItem="Cui-Ks-rnS" firstAttribute="leading" secondItem="svn-Jp-1C9" secondAttribute="leading" constant="10" id="z26-ow-tJ9"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j0F-5e-7yM">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AxD-aP-LgZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="j0F-5e-7yM" firstAttribute="leading" secondItem="AxD-aP-LgZ" secondAttribute="leading" id="2aX-4u-wvj"/>
+                            <constraint firstItem="AxD-aP-LgZ" firstAttribute="bottom" secondItem="j0F-5e-7yM" secondAttribute="bottom" id="9mK-DI-Ag2"/>
                             <constraint firstItem="svn-Jp-1C9" firstAttribute="leading" secondItem="AxD-aP-LgZ" secondAttribute="leading" id="S4T-do-VLL"/>
                             <constraint firstItem="svn-Jp-1C9" firstAttribute="top" secondItem="AxD-aP-LgZ" secondAttribute="top" id="Uis-GL-csJ"/>
                             <constraint firstItem="AxD-aP-LgZ" firstAttribute="trailing" secondItem="svn-Jp-1C9" secondAttribute="trailing" id="X0A-Ct-nfu"/>
+                            <constraint firstItem="AxD-aP-LgZ" firstAttribute="trailing" secondItem="j0F-5e-7yM" secondAttribute="trailing" id="bWN-hH-R7T"/>
+                            <constraint firstItem="j0F-5e-7yM" firstAttribute="top" secondItem="svn-Jp-1C9" secondAttribute="bottom" id="taI-kv-1ar"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="x8y-Vq-aTC"/>
+                    <connections>
+                        <outlet property="tableView" destination="j0F-5e-7yM" id="1Hy-Dz-WLv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaB-Ou-PmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

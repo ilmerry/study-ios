@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4C4AC09288995930073AE2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4AC08288995930073AE2D /* HomeViewController.swift */; };
 		F4F5357328865FAF00CA599C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5357228865FAF00CA599C /* AppDelegate.swift */; };
 		F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5357428865FAF00CA599C /* SceneDelegate.swift */; };
 		F4F5357A28865FAF00CA599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F5357828865FAF00CA599C /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4C4AC08288995930073AE2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4F5356F28865FAF00CA599C /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F5357228865FAF00CA599C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F5357428865FAF00CA599C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4C4AC07288995830073AE2D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4AC08288995930073AE2D /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F4F5356628865FAF00CA599C = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		F4F5357128865FAF00CA599C /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				F4C4AC07288995830073AE2D /* Home */,
 				F4F5357228865FAF00CA599C /* AppDelegate.swift */,
 				F4F5357428865FAF00CA599C /* SceneDelegate.swift */,
 				F4F5357828865FAF00CA599C /* Main.storyboard */,
@@ -158,6 +169,7 @@
 				F4F5358F2886CCAC00CA599C /* Color+Extension.swift in Sources */,
 				F4F5357328865FAF00CA599C /* AppDelegate.swift in Sources */,
 				F4F535952886E7E400CA599C /* UserInfo.swift in Sources */,
+				F4C4AC09288995930073AE2D /* HomeViewController.swift in Sources */,
 				F4F535932886D10800CA599C /* UIViewController+Extension.swift in Sources */,
 				F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */,
 				F4F535892886868400CA599C /* RegisterViewController.swift in Sources */,
