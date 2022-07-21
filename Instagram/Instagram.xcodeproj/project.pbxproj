@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F4C4AC09288995930073AE2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4AC08288995930073AE2D /* HomeViewController.swift */; };
+		F4C4AC0C288999E90073AE2D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4AC0A288999E90073AE2D /* FeedTableViewCell.swift */; };
+		F4C4AC0D288999E90073AE2D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4AC0B288999E90073AE2D /* FeedTableViewCell.xib */; };
 		F4F5357328865FAF00CA599C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5357228865FAF00CA599C /* AppDelegate.swift */; };
 		F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5357428865FAF00CA599C /* SceneDelegate.swift */; };
 		F4F5357A28865FAF00CA599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F5357828865FAF00CA599C /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		F4C4AC08288995930073AE2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4C4AC0A288999E90073AE2D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		F4C4AC0B288999E90073AE2D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		F4F5356F28865FAF00CA599C /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F5357228865FAF00CA599C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F5357428865FAF00CA599C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				F4C4AC08288995930073AE2D /* HomeViewController.swift */,
+				F4C4AC0A288999E90073AE2D /* FeedTableViewCell.swift */,
+				F4C4AC0B288999E90073AE2D /* FeedTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F5357F28865FB000CA599C /* LaunchScreen.storyboard in Resources */,
+				F4C4AC0D288999E90073AE2D /* FeedTableViewCell.xib in Resources */,
 				F4F5357C28865FB000CA599C /* Assets.xcassets in Resources */,
 				F4F5357A28865FAF00CA599C /* Main.storyboard in Resources */,
 			);
@@ -173,6 +180,7 @@
 				F4F535932886D10800CA599C /* UIViewController+Extension.swift in Sources */,
 				F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */,
 				F4F535892886868400CA599C /* RegisterViewController.swift in Sources */,
+				F4C4AC0C288999E90073AE2D /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
