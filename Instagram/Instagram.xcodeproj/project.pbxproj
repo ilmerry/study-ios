@@ -10,6 +10,11 @@
 		F4C4AC09288995930073AE2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4AC08288995930073AE2D /* HomeViewController.swift */; };
 		F4C4AC0C288999E90073AE2D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4AC0A288999E90073AE2D /* FeedTableViewCell.swift */; };
 		F4C4AC0D288999E90073AE2D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4AC0B288999E90073AE2D /* FeedTableViewCell.xib */; };
+		F4C75B0C288A283A00C4C6CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C75B0B288A283A00C4C6CB /* ProfileViewController.swift */; };
+		F4C75B0F288A2BB300C4C6CB /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C75B0D288A2BB300C4C6CB /* ProfileCollectionViewCell.swift */; };
+		F4C75B10288A2BB300C4C6CB /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C75B0E288A2BB300C4C6CB /* ProfileCollectionViewCell.xib */; };
+		F4C75B14288A3E9E00C4C6CB /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C75B12288A3E9E00C4C6CB /* PostCollectionViewCell.swift */; };
+		F4C75B15288A3E9E00C4C6CB /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C75B13288A3E9E00C4C6CB /* PostCollectionViewCell.xib */; };
 		F4F5357328865FAF00CA599C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5357228865FAF00CA599C /* AppDelegate.swift */; };
 		F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5357428865FAF00CA599C /* SceneDelegate.swift */; };
 		F4F5357A28865FAF00CA599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F5357828865FAF00CA599C /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 		F4C4AC08288995930073AE2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4C4AC0A288999E90073AE2D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		F4C4AC0B288999E90073AE2D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		F4C75B0B288A283A00C4C6CB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F4C75B0D288A2BB300C4C6CB /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4C75B0E288A2BB300C4C6CB /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		F4C75B12288A3E9E00C4C6CB /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4C75B13288A3E9E00C4C6CB /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		F4F5356F28865FAF00CA599C /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F5357228865FAF00CA599C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F5357428865FAF00CA599C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,26 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F4C75B0A288A27F900C4C6CB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F4C75B11288A3E8300C4C6CB /* Cell */,
+				F4C75B0B288A283A00C4C6CB /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F4C75B11288A3E8300C4C6CB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4C75B0D288A2BB300C4C6CB /* ProfileCollectionViewCell.swift */,
+				F4C75B0E288A2BB300C4C6CB /* ProfileCollectionViewCell.xib */,
+				F4C75B12288A3E9E00C4C6CB /* PostCollectionViewCell.swift */,
+				F4C75B13288A3E9E00C4C6CB /* PostCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F4F5356628865FAF00CA599C = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +112,7 @@
 		F4F5357128865FAF00CA599C /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				F4C75B0A288A27F900C4C6CB /* Profile */,
 				F4C4AC07288995830073AE2D /* Home */,
 				F4F5357228865FAF00CA599C /* AppDelegate.swift */,
 				F4F5357428865FAF00CA599C /* SceneDelegate.swift */,
@@ -159,8 +190,10 @@
 			files = (
 				F4F5357F28865FB000CA599C /* LaunchScreen.storyboard in Resources */,
 				F4C4AC0D288999E90073AE2D /* FeedTableViewCell.xib in Resources */,
+				F4C75B15288A3E9E00C4C6CB /* PostCollectionViewCell.xib in Resources */,
 				F4F5357C28865FB000CA599C /* Assets.xcassets in Resources */,
 				F4F5357A28865FAF00CA599C /* Main.storyboard in Resources */,
+				F4C75B10288A2BB300C4C6CB /* ProfileCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +210,12 @@
 				F4F5357328865FAF00CA599C /* AppDelegate.swift in Sources */,
 				F4F535952886E7E400CA599C /* UserInfo.swift in Sources */,
 				F4C4AC09288995930073AE2D /* HomeViewController.swift in Sources */,
+				F4C75B0C288A283A00C4C6CB /* ProfileViewController.swift in Sources */,
 				F4F535932886D10800CA599C /* UIViewController+Extension.swift in Sources */,
 				F4F5357528865FAF00CA599C /* SceneDelegate.swift in Sources */,
+				F4C75B14288A3E9E00C4C6CB /* PostCollectionViewCell.swift in Sources */,
 				F4F535892886868400CA599C /* RegisterViewController.swift in Sources */,
+				F4C75B0F288A2BB300C4C6CB /* ProfileCollectionViewCell.swift in Sources */,
 				F4C4AC0C288999E90073AE2D /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
